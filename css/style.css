@@ -1,0 +1,171 @@
+body,
+html {
+	min-height: 100%;
+}
+
+body {
+	background-image: url(../images/Login_Background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.right {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+	right: 0;
+	background-color: #ffffff00;
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 53%;
+	transform: translate(-60%, -62%);
+	text-align: center;
+	color: white;
+}
+
+.container {
+	position: relative;
+	width: 350px;
+	height: 470px;
+	background: #ffffff00;
+}
+
+.card {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 0.5s ease;
+	background-color: #ffffff00;
+}
+
+.front {
+	position: absolute;
+	border-radius: 0px;
+	width: 100%;
+	height: 90%;
+	transform: translate(0%,10%);
+	backface-visibility: hidden;
+	background: #ffffffcc;
+	color: #502d16ff;
+	font-family: Adobe Gothic Std;
+	padding-top: 20px;
+}
+
+.front h1 {
+	padding-top: 10%;
+	margin: auto;
+	width: 67%;
+	height: 13%;
+	border-bottom: 1.065px solid #502d16ff;
+}
+
+.back {
+	top: 10%;
+	position: absolute;
+	border-radius: 0px;
+	width: 100%;
+	height: 100%;
+	transform: translate(0%,10%);
+	backface-visibility: hidden;
+	background: #ffffffcc;
+	color: #502d16ff;
+	font-family: Adobe Gothic Std;
+	transform: rotateY(180deg);
+}
+
+.back h1 {
+	margin: auto;
+	width: 67%;
+	height: 13%;
+	border-bottom: 1.065px solid #502d16ff;
+}
+
+.submit {
+	margin-top: 20px;
+	background-color: #28170bcc;
+	border: none;
+	color: white;
+	width: 56%;
+	height: 50px;
+	padding-top: 18px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	text-align: center;
+	font-size: 16px;
+	font-family: Adobe Gothic Std;
+	cursor: pointer;
+	transition: all 0.2s ease;
+
+}
+
+.submit:hover {
+	transform: scale(1.08);
+}
+
+.user {
+	margin-bottom: 9px;
+	width: 75%;
+	box-sizing: border-box;
+	border: 0px;
+	border-radius: 0px;
+	font-size: 16px;
+	background-color: #e9c6afcc;
+	background-image: url("../images/userSRC.png");
+	background-position: 10px 5px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	font-family: sans-serif;
+	color: #3e3748ff;
+}
+
+.email {
+	margin-top: 9px;
+	margin-bottom: 9px;
+	width: 75%;
+	box-sizing: border-box;
+	border: 0px;
+	border-radius: 0px;
+	font-size: 16px;
+	background-color: #e9c6afcc;
+	background-image: url("../images/emailSRC.png");
+	background-position: 10px 5px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	font-family: sans-serif;
+	color: #3e3748ff;
+}
+
+.password {
+	margin-top: 9px;
+	margin-bottom: 6px;
+	width: 75%;
+	box-sizing: border-box;
+	border: 0px;
+	border-radius: 0px;
+	font-size: 16px;
+	background-color: #e9c6afcc;
+	background-image: url("../images/psswdSRC.png");
+	background-position: 10px 5px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	font-family: sans-serif;
+	color: #3e3748ff;
+}
+
+.arrow {
+	position: absolute;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 10px solid #505050; 
+	cursor: pointer;
+}
