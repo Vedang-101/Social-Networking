@@ -1,9 +1,13 @@
+<?php
+	session_start();
+	if(isset($_SESSION['user_id']))
+		session_destroy();
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Landing Page</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/croppie.js"></script>
 </head>
 <body>
 	<div class = "right">
@@ -33,22 +37,6 @@
 						<h1></h1>
 						<div style="top: -25%;position: relative; left: 27%; height: 30%; width: 30%;">
 							<img src="images/Signup/userDefault.png" style="border-radius: 50%;box-shadow: 5px 5px #4d4d4d10; height: 100%; width: auto" id="profile_image">
-							<script>
-								profile_image.onclick = function() {
-									var el = document.getElementById('profile_image');
-									var resize = new Croppie(el, {
-									    viewport: { width: 100, height: 100 },
-									    boundary: { width: 300, height: 300 },
-									    showZoomer: false,
-									    enableResize: true,
-									    enableOrientation: true,
-									    mouseWheelZoom: 'ctrl'
-									});
-									resize.bind({
-									    url: el.src,
-									});
-								}
-							</script>
 						</div>
 						<div style="top: -35%; position: relative; left: -15%;">
 							<img src="images/Signup/importSRC.png" id="sudo" style="transform: scale(0.6); cursor: pointer;">
@@ -72,7 +60,6 @@
 									reader.onload = function (e) {
 										document.getElementById("profile_image").src = e.target.result;
 									};
-
 									reader.readAsDataURL(this.files[0]);
 								}
 							</script>

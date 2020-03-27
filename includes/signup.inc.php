@@ -12,7 +12,7 @@ if(isset($_POST['signup'])) {
 	$profile = $_FILES['profile']['tmp_name'];
 
 	if(empty($profile))
-		$profile = 'C:\xampp\htdocs\Login\images\userDefault.png';
+		$profile = 'C:\xampp\htdocs\Login\images\Signup\userDefault.png';
 
 	//ErrorCheck
 	if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -32,7 +32,6 @@ if(isset($_POST['signup'])) {
 			} else {
 				$hash_pswd = password_hash($pswd, PASSWORD_DEFAULT);
 				$image = addslashes(file_get_contents($profile));
-	 			//Insert
 				$query = "INSERT INTO `users` (`user_name`, `user_email`, `user_password`, `user_profile`) VALUES ('$usrName', '$email', '$hash_pswd', '$image');";
 				$result = mysqli_query($conn, $query);
 				header("Location: ../index.php");

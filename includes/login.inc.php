@@ -22,14 +22,11 @@ if(isset($_POST['login'])) {
 			header("Location: ../index.php?error=password");
 			return;
 		} else {
-			echo "Login: Sucessful";
-			echo "<br/>";
-			$sql = "SELECT * FROM users WHERE user_name='$usrName';";
-			$result = mysqli_query($conn, $sql);
-			$row = mysqli_fetch_array($result);
-			$id = $row['user_id'];
-			echo "<img src=profile.inc.php?id=$id>";
-			exit();
+			//Login sucessful
+			session_start();
+			$_SESSION['user_id'] = $usrName;
+			header("Location: ../home.php");
+			return;
 		}
 	}
 
