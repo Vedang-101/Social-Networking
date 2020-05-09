@@ -15,7 +15,7 @@ This is part of my course project for the course of Database Management Systems.
 </p>
 
 # Dependencies
-The only required software you require for running the project is:
+The only software you require for running the project is:
 - XAMPP MySQL
 
 # How to Setup on new System
