@@ -2,16 +2,16 @@
 This is part of my course project for the course of Database Management Systems. After learning primary SQL syntax and using MySQL, this project is an attempt to build a social networking web application with PHP. The project includes login page along with a home page running dynamically from MySQL Local Server.<br>
 
 <p align="center">
-  <img width="600" height="300" src="images/Screenshots/Login.png">
+  <img width="600" src="images/Screenshots/Login.png">
 </p>
 <p align="center">
-  <img width="600" height="300" src="images/Screenshots/Signup.png">
+  <img width="600" src="images/Screenshots/Signup.png">
 </p>
 <p align="center">
-  <img width="600" height="300" src="images/Screenshots/Home.png">
+  <img width="600" src="images/Screenshots/Home.png">
 </p>
 <p align="center">
-  <img width="600" height="300" src="images/Screenshots/Upload.png">
+  <img width="600" src="images/Screenshots/Upload.png">
 </p>
 
 # Dependencies
